@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<main id="form-page">
+  <header>
+    <h1 id="title">Survey form</h1>
+    <p id="description">An appraisal form for the FreeCodeCamp and their learning academy</p>
+  </header>
+
+  <form id="survey-form">
+    <div class="question">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" class="input-control" placeholder="Enter your name" required>
+    </div>
+
+    <div class="question">
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" class="input-control" placeholder="Enter your email" required>
+    </div>
+
+    <div class="question">
+      <label id="number-label" for="number">Enter your age</label>
+      <input id="number" class="input-control" type="number" min=5 max=120 placeholder="Age">
+    </div>
+
+    <div class="question">
+      <label for="dropdown">Please select an option</label>
+      <select id="dropdown" class="input-control">
+        <option value="Durban">Durban</option>
+        <option value="Kingston">Kingston</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+      </select>
+
+    </div>
+
+    <div class="question">
+      <p class="p-question">Please select your gender:</p>
+      <label>
+        <input type="radio" name="gender" class="input-radio" value="Male" id="male">
+        Male</label>
+
+      <label>
+        <input type="radio" class="input-radio" name="gender" value="Female" id="female">
+        Female</label>
+
+    </div>
+
+    <div class="question">
+      <p class="p-question">Please select your favorite food</p>
+      <label><input class="input-checkbox" type="checkbox" id="1" name="1" value="1">1</label>
+
+      <label><input class="input-checkbox" type="checkbox" id="2" name="2" value="2">2</label>
+
+      <label><input class="input-checkbox" type="checkbox" id="3" name="3" value="3">3</label>
+
+      <label>
+        <input class="input-checkbox" type="checkbox" id="4" name="4" value="4">4</label>
+
+    </div>
+
+    <div class="question">
+      <label for="comments">Please enter any additional comments:</label>
+      <textarea id="comments" class="input-textarea" name="comments" rows="4" cols="50">
+    </textarea>
+
+    </div>
+
+    <div id="submission">
+      <button type="submit" id="submit">Submit</button>
+    </div>
+  </form>
+
+</main>
+
+</body>
+</html>
